@@ -4,11 +4,12 @@ import Header from "../components/header"
 import Layout from "../components/layout"
 import { css } from "@emotion/core"
 import { rhythm } from "../utils/typography"
+import SEO from "../components/seo"
 
 export default function Home({ data }) {
-  console.log(data)
   return (
     <Layout>
+      <SEO title="測試測試" description="測試正常" />
       <Link to="/contact/">Contact</Link>
       <Header headerText="Hello Gatsby!" />
       <p>What a world.</p>
